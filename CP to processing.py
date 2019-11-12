@@ -13,4 +13,4 @@ uart = busio.UART(board.TX, board.RX, baudrate=9600)
 while True:
     uart.write(bytes([int(get_voltage(analog_in))]))
     print(bytes([int(get_voltage(analog_in))]))
-    sleep(.5)
+    sleep(.1)
